@@ -145,6 +145,24 @@ section {
   font-size: 16px;
 }
 
+/* ***********************************************************************
+ * Issue: On mobile the error message is in the incorrect position
+ * Fix: add media query to change botton to 0 and change post to relative
+ *************************************************************************/
+@media screen and (max-width:768px) { 
+	 .input-group.error .error-msg  {
+        display: block;
+		position: relative;
+		bottom: 0px;
+		margin: 0px;
+		padding: 4px 8px;
+		background: #DC0015;
+		color: #FFF;
+		border-radius: 0 0 3px 3px;
+		font-size: 16px;
+	}
+}
+
 .form-control::placeholder {
   color: #9B9B9B;
   font-size: 16px;
@@ -213,6 +231,7 @@ section {
 .list-item {
   margin-bottom: 28px;
 }
+
 
 .list-circle {
   border-radius: 50%;
