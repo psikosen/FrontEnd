@@ -4,6 +4,7 @@
 --| General
 --| Navbar
 --| Search Form
+--| Search Button 
 --| [SECTION] Above the Fold 
 --| [SECTION] Features
 --| [SECTION][RESULTS PAGE] Result
@@ -106,8 +107,8 @@ section {
   font-size: 24px;
   font-weight: bold;
   color: #004A80;
-  background-image: linear-gradient(225deg, #F2DA56 0%, #F6BC25 100%);
-  box-shadow: 0 3px 0 0 #A6953B, inset 0 1px 0 0 #FFFFFF;
+  background-image: linear-gradient(225deg, #EFEFEF 0%, #EFEFEF 100%);
+  box-shadow: 0 3px 0 0 #EFEFEF, inset 0 1px 0 0 #FFFFFF;
   border-radius: 6px;
   outline: 0;
   appearance: none;
@@ -115,6 +116,26 @@ section {
   width: 180px;
   margin-left: 20px;
 }
+
+.btn-form-submit:focus { 
+  background-image: linear-gradient(225deg, #F6BC25 0%, #F6BC25 100%); 
+  box-shadow: 0 3px 0 0 #F6BC25, inset 0 1px 0 0 #F6BC25;
+
+} 
+
+.btn-form-submit:active { 
+  background-image: linear-gradient(225deg, #F6BC25 0%, #F6BC25 100%); 
+  box-shadow: 0 3px 0 0 #F6BC25, inset 0 1px 0 0 #F6BC25;
+
+}
+
+.btn-form-submit:hover { 
+  background-image: linear-gradient(225deg, yellow 0%, yellow 100%);
+  box-shadow: 0 3px 0 0 yellow, inset 0 1px 0 0 yellow;
+
+}
+
+
 
 .input-group > .form-control {
   height: 70px;
@@ -194,11 +215,12 @@ section {
   }
 }
 
-/* ************************************************************
-***************************************************************
---- [SECTION] Above the Fold ---
-***************************************************************
-************************************************************ */
+
+
+/****************************************************************
+*[SECTION] Above the Fold
+****************************************************************
+*/
 
 .above-the-fold {
   background: #004A80;
