@@ -59,6 +59,13 @@ section {
   color: #004A80 !important;
 }
 
+.text-primary-centered{   
+    color: #004A80 !important;
+	margin-left:auto;
+    margin-right:  28%; 
+    width: 21em;
+}
+
 .text-secondary {
   color: #4A4A4A !important;
 }
@@ -116,7 +123,7 @@ section {
   width: 180px;
   margin-left: 20px;
 }
-
+/*QA FIX 3*/
 .btn-form-submit:focus { 
   background-image: linear-gradient(225deg, #F6BC25 0%, #F6BC25 100%); 
   box-shadow: 0 3px 0 0 #F6BC25, inset 0 1px 0 0 #F6BC25;
@@ -134,9 +141,7 @@ section {
   box-shadow: 0 3px 0 0 yellow, inset 0 1px 0 0 yellow;
 
 }
-
-
-
+ 
 .input-group > .form-control {
   height: 70px;
   background: #FFF;
@@ -174,7 +179,7 @@ section {
 	 .input-group.error .error-msg  {
         display: block;
 		position: relative;
-		bottom: 0px;
+		bottom: 30px;
 		margin: 0px;
 		padding: 4px 8px;
 		background: #DC0015;
@@ -318,10 +323,15 @@ section {
 --- [SECTION][RESULTS PAGE] Result ---
 ***************************************************************
 ************************************************************ */
+.loadingContainer{
+	background-color: #F8F8F8;  
+    min-height: 455px;
+	padding-top: 10%;
+}
 
 .result {
   background: #F8F8F8;
-  min-height: 455px;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -426,4 +436,14 @@ section {
 .footer a:first-of-type:after {
   content: '|';
   padding-left: 5px;
+}
+
+/******************************************************
+*   Utility 
+*
+******************************************************/
+.centered{
+	margin-left: auto;
+    margin-right: auto;
+    width: 12em;
 }

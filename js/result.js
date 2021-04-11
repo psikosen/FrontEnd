@@ -9,12 +9,13 @@ $(document).ready(function () {
       var testVar;
       retreivedObject = JSON.parse(user_object); //parses the retrieved object into an JSON object
       if (JSON.stringify(retreivedObject) == "[]") {
-        $('#result-count').text("0 Results");
+        $('#result-count').text(retreivedObject.length + " Results");
         $(".result-desc").text(
           "Try starting a new search below"
         );
       } else {
-        $('#result-count').text("1 Result");
+		  // get count of objec just in case their are multiple users with the same number or name
+        $('#result-count').text(retreivedObject.length + " Result");
         $("#result-subtext").html("Look at the result below to see the details of the person you’re searched for.");
         $(".name").append(
           retreivedObject.first_name + " " + retreivedObject.last_name

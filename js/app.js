@@ -21,8 +21,8 @@ $(document).ready(function () {
       fetch(proxyurl + url)
         .then((response) => response.text())
         .then(function (contents) {
-          localStorage.setItem("userObject", contents);
-          window.location.href = "result.html";
+          localStorage.setItem("userObject", contents); 
+          window.location.href = "loading.html"; 
         })
         .catch((e) => console.log(e));
     } else if (x !== true) {
@@ -59,7 +59,7 @@ $(document).ready(function () {
           .then((response) => response.text())
           .then(function (contents) {
             localStorage.setItem("userObject", contents);
-            window.location.href = "result.html";
+            window.location.href = "loading.html"; 
           })
           .catch((e) => console.log(e));
       } else if (x !== true) {
