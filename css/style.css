@@ -104,6 +104,61 @@ section {
   padding: 20px 16px;
 }
 
+/* 
+*************************************************************  
+*  --- Search Selection Row ---
+* 
+*************************************************************/
+.typeOfSearchText{ 
+  color: #F8F8F8;
+}
+
+.searchBtnSelected{  
+  border-radius: 3px 3px 3px 3px !important;
+  color:#004A80;	
+  background: #F6BC25;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.searchBtnUnselected{
+  color: #F6BC25;	
+  border: 2px solid #F6BC25;
+  border-radius: 3px 3px 3px 3px !important;
+  background: #004A80;
+  font-weight: bold;
+  text-transform: uppercase; 
+} 
+ 
+
+.searchBtnSelected.bubble:after 
+{
+content: "";
+position: relative;
+bottom: -12px; 
+left:36px;
+border-style: solid;
+border-width:  7px 7px 0;
+border-color: #F6BC25 transparent;
+display: block;
+width: 0;
+z-index: 1;
+}
+  
+.typeOfSearchSelectionRow { 
+  list-style-type: none; 
+  margin:15px;
+  padding: 0;
+}
+
+.typeOfSearchSelectionRow li{ 
+  font-size: 11px;	
+  display: inline-block;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+
+
 /* ************************************************************
 ***************************************************************
 --- Search Form ---
@@ -446,4 +501,8 @@ section {
 	margin-left: auto;
     margin-right: auto;
     width: 12em;
+}
+
+.searchIcon{
+	cursor: pointer;
 }

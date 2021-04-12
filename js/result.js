@@ -15,14 +15,17 @@ $(document).ready(function () {
         );
       } else {
 		  // get count of objec just in case their are multiple users with the same number or name
-        $('#result-count').text(retreivedObject.length + " Result");
-        $("#result-subtext").html("Look at the result below to see the details of the person you’re searched for.");
-        $(".name").append(
+        document.getElementById('result-count').innerHTML =   "Result Retrieved"; 
+         document.getElementById("result-subtext").innerHTML = "Look at the result below to see the details of the person you’re searched for.";
+
+         $(".name").append(
           retreivedObject.first_name + " " + retreivedObject.last_name
         );
-        $('.user-description').append(retreivedObject.description);
-        $("#address").append("<p>" + retreivedObject.address + '</p>');
+        $('.user-description').append(retreivedObject.description);  
+        document.getElementById("address").innerHTML = "<p>" + retreivedObject.address + '</p>';
+       
         $(".email").append("<p>" + retreivedObject.email + "</p>");
+
 
         for (const phone_number in retreivedObject.phone_numbers) {
           phone = retreivedObject.phone_numbers[phone_number]
